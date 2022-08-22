@@ -1,0 +1,61 @@
+{
+  "chatList":[
+    {
+      "id":"1",
+      "receiver":{
+        "id":"01",
+        "image":"https://picsum.photos/id/1005/60",
+        "firstName":"Furkan",
+        "lastName":"Bağırgan"
+      },
+      "messages":[
+        {
+          "text":"Naber :)",
+          "datetime":"2022-08-22T12:55:00.000Z"
+        },
+        {
+          "text":"Nasıl Gidiyor?",
+          "datetime":"2022-08-22T12:55:00.000Z"
+        }
+      ]
+    },
+    {
+      "id":"2",
+      "receiver":{
+        "id":"02",
+        "image":"https://picsum.photos/id/1006/60",
+        "firstName":"Ömer",
+        "lastName":"Yılmaz"
+      },
+      "messages":[
+        {
+          "text":"Naber Ömer :)",
+          "datetime":"2022-08-22T12:55:00.000Z"
+        },
+        {
+          "text":"Nasılsın?",
+          "datetime":"2022-08-22T12:55:00.000Z"
+        }
+      ]
+    },
+    {
+      "id":"3",
+      "receiver":{
+        "id":"03",
+        "image":"https://picsum.photos/id/101/60",
+        "firstName":"Sena",
+        "lastName":"Deniz"
+      },
+      "messages":[
+        {
+          "text":"Abi :)",
+          "datetime":"2022-08-22T12:55:00.000Z"
+        },
+        {
+          "text":"Naber?",
+          "datetime":"2022-08-22T12:55:00.000Z"
+        }
+      ]
+    }
+  ]
+}

@@ -1,4 +1,5 @@
 import React from "react";
+import { Image, StyleSheet } from "react-native";
 import {NavigationContainer} from "@react-navigation/native";
 import {createNativeStackNavigator} from "@react-navigation/native-stack";
 
@@ -31,6 +32,9 @@ const App = () => {
             headerTintColor: "white",
             headerTitle: route.params.chatName,
             headerShadowVisible:false,
+            headerTitleStyle:{fontSize:15},
+            headerBackVisible:true,
+            headerLeft:()=><Image source={{uri:route.params.chat.receiver.image}} style={styles.image} />,
             headerRight:()=><HeaderIcons headerType="chat" />
           })}
         />
@@ -38,5 +42,15 @@ const App = () => {
     </NavigationContainer>
   );
 };
+
+const styles=StyleSheet.create({
+  image:{
+    width:32,
+    height:32,
+    borderRadius:16,
+    marginLeft:-20,
+    marginRight:10
+  }
+});
 
 export default App;

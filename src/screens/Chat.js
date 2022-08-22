@@ -1,10 +1,12 @@
 import React from "react";
-import { SafeAreaView, StyleSheet, Text } from "react-native";
+import { SafeAreaView, Text, StyleSheet } from "react-native";
 
-const ChatScreen = () => {
+const ChatScreen = ({route}) => {
+  const {chat,chatName}=route.params;
+
   return (
     <SafeAreaView style={styles.container}>
-      <Text style={styles.text}>Chat Screen</Text>
+      <Text style={styles.text}>{chatName}</Text>
     </SafeAreaView>
   );
 };
