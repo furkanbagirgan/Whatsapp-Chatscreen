@@ -1,10 +1,12 @@
 import React from "react";
-import { SafeAreaView, StyleSheet, Text } from "react-native";
+import { SafeAreaView, StyleSheet } from "react-native";
+
+import TabBar from "../components/TabBar";
 
 const HomeScreen = () => {
   return (
     <SafeAreaView style={styles.container}>
-      <Text style={styles.text}>Home Screen</Text>
+      <TabBar />
     </SafeAreaView>
   );
 };
@@ -14,9 +16,7 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: "white"
   },
-  text: {
-    color: "black",
-  },
+  
 });
 
 export default HomeScreen;
