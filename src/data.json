@@ -15,14 +15,29 @@
           "datetime":"2022-08-23T12:05:00"
         },
         {
-          "text":"İyidir, senden naber?",
+          "text":"İyidir, iş güç koşturuyoruz valla, senden naber?",
           "sender":"receiver",
           "datetime":"2022-08-23T12:15:00"
         },
         {
-          "text":"İyiyim çalışıyorum",
+          "text":"Bende iyiyim aynı çalışıyorum",
           "sender":"itself",
           "datetime":"2022-08-23T12:17:00"
+        },
+        {
+          "text":"Yarın müsait olduğunda buluşalım mı?",
+          "sender":"itself",
+          "datetime":"2022-08-23T12:18:00"
+        },
+        {
+          "text":"Olur ben ararım seni duruma göre önce yemek yeriz sonra sinemaya gideriz",
+          "sender":"receiver",
+          "datetime":"2022-08-23T12:19:00"
+        },
+        {
+          "text":"Tamamdır görüşürüz",
+          "sender":"itself",
+          "datetime":"2022-08-23T12:19:00"
         }
       ]
     },

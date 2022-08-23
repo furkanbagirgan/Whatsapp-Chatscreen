@@ -26,7 +26,7 @@ const styles = StyleSheet.create({
     marginLeft: 10,
   },
   receiverWrapper: {
-    width: "100%",
+    width:"100%",
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "center",
