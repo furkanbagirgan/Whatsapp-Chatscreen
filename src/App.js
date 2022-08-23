@@ -1,5 +1,5 @@
 import React from "react";
-import { Image, StyleSheet } from "react-native";
+import {Image, StyleSheet} from "react-native";
 import {NavigationContainer} from "@react-navigation/native";
 import {createNativeStackNavigator} from "@react-navigation/native-stack";
 
@@ -20,22 +20,27 @@ const App = () => {
             headerStyle: {backgroundColor: "#128C7E"},
             headerTintColor: "white",
             headerTitle: "WhatsApp",
-            headerShadowVisible:false,
-            headerRight:()=><HeaderIcons headerType="home" />
+            headerShadowVisible: false,
+            headerRight: () => <HeaderIcons headerType="home" />,
           }}
         />
         <Stack.Screen
           name="Chat"
           component={ChatScreen}
-          options={({route})=>({
+          options={({route}) => ({
             headerStyle: {backgroundColor: "#128C7E"},
             headerTintColor: "white",
             headerTitle: route.params.chatName,
-            headerShadowVisible:false,
-            headerTitleStyle:{fontSize:15},
-            headerBackVisible:true,
-            headerLeft:()=><Image source={{uri:route.params.chat.receiver.image}} style={styles.image} />,
-            headerRight:()=><HeaderIcons headerType="chat" />
+            headerShadowVisible: false,
+            headerTitleStyle: {fontSize: 16},
+            headerBackVisible: true,
+            headerLeft: () => (
+              <Image
+                source={{uri: route.params.chat.receiver.image}}
+                style={styles.image}
+              />
+            ),
+            headerRight: () => <HeaderIcons headerType="chat" />,
           })}
         />
       </Stack.Navigator>
@@ -43,14 +48,14 @@ const App = () => {
   );
 };
 
-const styles=StyleSheet.create({
-  image:{
-    width:32,
-    height:32,
-    borderRadius:16,
-    marginLeft:-20,
-    marginRight:10
-  }
+const styles = StyleSheet.create({
+  image: {
+    width: 32,
+    height: 32,
+    borderRadius: 16,
+    marginLeft: -20,
+    marginRight: 5,
+  },
 });
 
 export default App;

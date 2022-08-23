@@ -1,20 +1,4 @@
-import React from "react";
-import {View, Text, StyleSheet} from "react-native";
-import Icon from "react-native-vector-icons/MaterialCommunityIcons";
-
-const TabBar = () => {
-  return (
-    <View style={styles.tabBar}>
-      <Icon name="camera" size={22} color="white" style={styles.icon} />
-      <View style={styles.activeTab}>
-        <Text style={styles.activeTabText}>CHATS</Text>
-        <View style={styles.tabLine} />
-      </View>
-      <Text style={styles.tabText}>STATUS</Text>
-      <Text style={styles.tabText}>CALLS</Text>
-    </View>
-  );
-};
+import {StyleSheet} from "react-native";
 
 const styles = StyleSheet.create({
   tabBar: {
@@ -62,4 +46,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default TabBar;
+export default styles;
