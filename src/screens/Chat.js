@@ -5,18 +5,23 @@ import Icon from "react-native-vector-icons/MaterialCommunityIcons";
 import MessageCard from "../components/MessageCard";
 
 const ChatScreen = ({route}) => {
+  //Here, the parameters from the home screen are taken by route and assigned to the objects.
   const {chat,chatName}=route.params;
 
+  //Here is the function where key assignments of the fields to repeat in the flatlist are made.
   const keyExtractor = (item,index) => {
     return String(index);
   };
 
+  //Here, there is a function that adjusts how the areas to be repeated in the
+  //flatlist will appear on the screen. Also, a MessageCard component is created for each message.
   const renderItem = ({item}) => {
     return (
       <MessageCard message={item} />
     );
   };
 
+  //Here, messages are displayed on the screen with the textInput field and flatlist at the bottom.
   return (
     <SafeAreaView style={{flex: 1,backgroundColor: "#ebe5de"}}>
       <View style={{marginBottom:15}} />
@@ -43,6 +48,7 @@ const ChatScreen = ({route}) => {
   );
 };
 
+//Here, the required styles are created for the textInput field at the bottom.
 const styles=StyleSheet.create({
   bottomContainer:{
     width:"100%",

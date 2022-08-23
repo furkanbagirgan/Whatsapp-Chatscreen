@@ -1,5 +1,6 @@
 import {Dimensions, StyleSheet} from "react-native";
 
+////Here the styles of the chatCard are created.
 const styles = StyleSheet.create({
   container: {
     width: "100%",

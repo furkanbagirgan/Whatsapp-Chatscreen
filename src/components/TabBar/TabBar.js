@@ -5,6 +5,8 @@ import Icon from "react-native-vector-icons/MaterialCommunityIcons";
 import styles from "./TabBar.style";
 
 const TabBar = ({tabs, activeTab, iconName}) => {
+  //Here, the tab names sent with the tabs prop are created with the map method,
+  //and a different view is created according to their active tab status.
   return (
     <View style={styles.tabBar}>
       {iconName && (

@@ -3,6 +3,7 @@ import {View} from "react-native";
 import Icon from "react-native-vector-icons/MaterialCommunityIcons";
 
 const HeaderIcons = ({headerType}) => {
+  //Here, it is controlled over the headerType and icons are created accordingly.
   return (
     <>
       {headerType === "home" ? (

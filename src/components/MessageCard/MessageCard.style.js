@@ -1,5 +1,6 @@
 import {Dimensions, StyleSheet} from "react-native";
 
+////Here the basic styles of the messageCard are created.
 const basicStyles=StyleSheet.create({
   container: {
     padding: 10,
@@ -11,6 +12,7 @@ const basicStyles=StyleSheet.create({
   },
 });
 
+////Here the styles of the messageCard are created.
 const styles = StyleSheet.create({
   sendContainer:{
     ...basicStyles.container,

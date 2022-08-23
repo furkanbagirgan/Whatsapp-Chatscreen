@@ -6,8 +6,10 @@ import Icon from "react-native-vector-icons/MaterialCommunityIcons";
 import styles from "./MessageCard.style";
 
 const MessageCard = ({message}) => {
+  //Here, the location is entered into the moment library to display the dates and times in different formats.
   moment.locale("tr");
 
+  //Here, messages are created by checking the status of the sender via the incoming message prop.
   return (
     <View style={message.sender==="itself" ? styles.sendContainer : styles.receiveContainer}>
       <View style={message.sender==="itself" ? styles.rightCorner : styles.leftCorner}></View>

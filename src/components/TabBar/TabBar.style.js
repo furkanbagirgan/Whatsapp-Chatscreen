@@ -1,5 +1,6 @@
 import {StyleSheet} from "react-native";
 
+//Here the styles of the tabBar are created.
 const styles = StyleSheet.create({
   tabBar: {
     backgroundColor: "#128C7E",
