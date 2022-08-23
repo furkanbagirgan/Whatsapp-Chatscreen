@@ -1,24 +1,32 @@
 import React from "react";
-import { SafeAreaView, Text, StyleSheet } from "react-native";
+import { SafeAreaView, FlatList } from "react-native";
+
+import MessageCard from "../components/MessageCard";
 
 const ChatScreen = ({route}) => {
   const {chat,chatName}=route.params;
 
+  const keyExtractor = (item,index) => {
+    return String(index);
+  };
+
+  const renderItem = ({item}) => {
+    return (
+      <MessageCard message={item} />
+    );
+  };
+
   return (
-    <SafeAreaView style={styles.container}>
-      <Text style={styles.text}>{chatName}</Text>
+    <SafeAreaView style={{flex: 1,backgroundColor: "#ebe5de"}}>
+      <FlatList
+        keyExtractor={keyExtractor}
+        data={chat.messages}
+        renderItem={renderItem}
+        overScrollMode="never"
+        bounces={false}
+      />
     </SafeAreaView>
   );
 };
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "white"
-  },
-  text: {
-    color: "black",
-  },
-});
 
 export default ChatScreen;

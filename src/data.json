@@ -11,11 +11,18 @@
       "messages":[
         {
           "text":"Naber :)",
-          "datetime":"2022-08-22T12:55:00.000Z"
+          "sender":"itself",
+          "datetime":"2022-08-23T12:05:00"
         },
         {
-          "text":"Nasıl Gidiyor?",
-          "datetime":"2022-08-22T12:55:00.000Z"
+          "text":"İyidir, senden naber?",
+          "sender":"receiver",
+          "datetime":"2022-08-23T12:15:00"
+        },
+        {
+          "text":"İyiyim çalışıyorum",
+          "sender":"itself",
+          "datetime":"2022-08-23T12:17:00"
         }
       ]
     },
@@ -29,12 +36,19 @@
       },
       "messages":[
         {
-          "text":"Naber Ömer :)",
-          "datetime":"2022-08-22T12:55:00.000Z"
+          "text":"Nasılsın?",
+          "sender":"receiver",
+          "datetime":"2022-08-23T11:42:00"
         },
         {
-          "text":"Nasılsın?",
-          "datetime":"2022-08-22T12:55:00.000Z"
+          "text":"İdare eder valla sen nasılsın :)",
+          "sender":"itself",
+          "datetime":"2022-08-23T11:43:00"
+        },
+        {
+          "text":"Şimdi geldim, yorgunum",
+          "sender":"receiver",
+          "datetime":"2022-08-23T11:58:00"
         }
       ]
     },
@@ -49,11 +63,13 @@
       "messages":[
         {
           "text":"Abi :)",
-          "datetime":"2022-08-22T12:55:00.000Z"
+          "sender":"receiver",
+          "datetime":"2022-08-21T16:35:00"
         },
         {
-          "text":"Naber?",
-          "datetime":"2022-08-22T12:55:00.000Z"
+          "text":"Efendim?",
+          "sender":"itself",
+          "datetime":"2022-08-21T16:36:00"
         }
       ]
     }
