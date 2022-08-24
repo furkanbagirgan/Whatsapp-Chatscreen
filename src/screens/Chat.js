@@ -1,12 +1,12 @@
-import React from "react";
-import {SafeAreaView, View, FlatList, StyleSheet} from "react-native";
-import Icon from "react-native-vector-icons/MaterialCommunityIcons";
+import React from 'react';
+import {SafeAreaView, View, FlatList, StyleSheet} from 'react-native';
+import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
-import MessageCard from "../components/MessageCard";
+import MessageCard from '../components/MessageCard';
 
 const ChatScreen = ({route}) => {
   //Here, the parameters from the home screen are taken by route and assigned to the objects.
-  const {chat, chatName} = route.params;
+  const {chat} = route.params;
 
   //Here is the function where key assignments of the fields to repeat in the flatlist are made.
   const keyExtractor = (item, index) => {
@@ -49,30 +49,30 @@ const ChatScreen = ({route}) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#ebe5de",
+    backgroundColor: '#ebe5de',
     paddingTop: 15,
   },
   bottomContainer: {
-    width: "100%",
+    width: '100%',
     height: 80,
-    flexDirection: "row",
-    justifyContent: "space-between",
-    alignItems: "center",
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
     paddingHorizontal: 15,
     paddingTop: 20,
     paddingBottom: 15,
   },
   textInput: {
-    width: "83%",
-    height: "100%",
+    width: '83%',
+    height: '100%',
     paddingLeft: 10,
     paddingRight: 15,
-    flexDirection: "row",
-    justifyContent: "space-between",
-    alignItems: "center",
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
     borderRadius: 25,
-    backgroundColor: "white",
-    shadowColor: "#000",
+    backgroundColor: 'white',
+    shadowColor: '#000',
     shadowOffset: {
       width: 0,
       height: 2,
@@ -82,7 +82,7 @@ const styles = StyleSheet.create({
     elevation: 5,
   },
   icons: {
-    flexDirection: "row",
+    flexDirection: 'row',
   },
   icon: {
     marginLeft: 10,
@@ -90,12 +90,12 @@ const styles = StyleSheet.create({
   voiceRecord: {
     width: 45,
     height: 45,
-    flexDirection: "row",
-    justifyContent: "center",
-    alignItems: "center",
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
     borderRadius: 22.5,
-    backgroundColor: "#128C7E",
-    shadowColor: "#000",
+    backgroundColor: '#128C7E',
+    shadowColor: '#000',
     shadowOffset: {
       width: 0,
       height: 2,

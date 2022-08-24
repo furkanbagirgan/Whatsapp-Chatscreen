@@ -1,8 +1,8 @@
-import React from "react";
-import {View, Text} from "react-native";
-import Icon from "react-native-vector-icons/MaterialCommunityIcons";
+import React from 'react';
+import {View, Text} from 'react-native';
+import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
-import styles from "./TabBar.style";
+import styles from './TabBar.style';
 
 const TabBar = ({tabs, activeTab, iconName}) => {
   //Here, the tab names sent with the tabs prop are created with the map method,

@@ -1,15 +1,15 @@
-import {StyleSheet} from "react-native";
+import {StyleSheet} from 'react-native';
 
 //Here the styles of the tabBar are created.
 const styles = StyleSheet.create({
   tabBar: {
-    backgroundColor: "#128C7E",
-    width: "100%",
+    backgroundColor: '#128C7E',
+    width: '100%',
     height: 50,
-    flexDirection: "row",
-    justifyContent: "space-around",
-    alignItems: "flex-end",
-    shadowColor: "#000",
+    flexDirection: 'row',
+    justifyContent: 'space-around',
+    alignItems: 'flex-end',
+    shadowColor: '#000',
     shadowOffset: {
       width: 0,
       height: 2,
@@ -26,24 +26,24 @@ const styles = StyleSheet.create({
     opacity: 0.7,
   },
   activeTab: {
-    flexDirection: "column",
-    alignItems: "center",
+    flexDirection: 'column',
+    alignItems: 'center',
   },
   activeTabText: {
-    color: "white",
-    fontWeight: "bold",
+    color: 'white',
+    fontWeight: 'bold',
     marginBottom: 10,
   },
   tabText: {
-    color: "white",
-    fontWeight: "bold",
+    color: 'white',
+    fontWeight: 'bold',
     marginBottom: 14,
     opacity: 0.7,
   },
   tabLine: {
-    width: "160%",
+    width: '160%',
     height: 4,
-    backgroundColor: "white",
+    backgroundColor: 'white',
   },
 });
 

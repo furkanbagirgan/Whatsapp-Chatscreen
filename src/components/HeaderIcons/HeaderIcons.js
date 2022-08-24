@@ -1,14 +1,14 @@
-import React from "react";
-import {View} from "react-native";
-import Icon from "react-native-vector-icons/MaterialCommunityIcons";
+import React from 'react';
+import {View} from 'react-native';
+import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
-import styles from "./HeaderIcons.style";
+import styles from './HeaderIcons.style';
 
 const HeaderIcons = ({headerType}) => {
   //Here, it is controlled over the headerType and icons are created accordingly.
   return (
     <>
-      {headerType === "home" ? (
+      {headerType === 'home' ? (
         <View style={styles.container}>
           <Icon name="magnify" size={25} color="white" />
           <Icon

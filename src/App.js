@@ -1,11 +1,11 @@
-import React from "react";
-import {Image, StyleSheet} from "react-native";
-import {NavigationContainer} from "@react-navigation/native";
-import {createNativeStackNavigator} from "@react-navigation/native-stack";
+import React from 'react';
+import {Image, StyleSheet} from 'react-native';
+import {NavigationContainer} from '@react-navigation/native';
+import {createNativeStackNavigator} from '@react-navigation/native-stack';
 
-import HomeScreen from "./screens/Home";
-import ChatScreen from "./screens/Chat";
-import HeaderIcons from "./components/HeaderIcons";
+import HomeScreen from './screens/Home';
+import ChatScreen from './screens/Chat';
+import HeaderIcons from './components/HeaderIcons';
 
 //Here, the stack navigator required for switching between pages is created.
 const Stack = createNativeStackNavigator();
@@ -22,9 +22,9 @@ const App = () => {
           name="Home"
           component={HomeScreen}
           options={{
-            headerStyle: {backgroundColor: "#128C7E"},
-            headerTintColor: "white",
-            headerTitle: "WhatsApp",
+            headerStyle: {backgroundColor: '#128C7E'},
+            headerTintColor: 'white',
+            headerTitle: 'WhatsApp',
             headerShadowVisible: false,
             headerRight: () => <HeaderIcons headerType="home" />,
           }}
@@ -36,8 +36,8 @@ const App = () => {
           name="Chat"
           component={ChatScreen}
           options={({route}) => ({
-            headerStyle: {backgroundColor: "#128C7E"},
-            headerTintColor: "white",
+            headerStyle: {backgroundColor: '#128C7E'},
+            headerTintColor: 'white',
             headerTitle: route.params.chatName,
             headerShadowVisible: false,
             headerTitleStyle: {fontSize: 16},

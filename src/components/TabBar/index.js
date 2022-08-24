@@ -1,2 +1,2 @@
 //Here the TabBar.js page is exported.
-export {default} from "./TabBar";
+export {default} from './TabBar';
