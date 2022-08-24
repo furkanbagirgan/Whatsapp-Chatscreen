@@ -1,5 +1,11 @@
 import React from "react";
-import {FlatList, SafeAreaView, View, Dimensions} from "react-native";
+import {
+  FlatList,
+  SafeAreaView,
+  View,
+  Dimensions,
+  StyleSheet,
+} from "react-native";
 
 import TabBar from "../components/TabBar";
 import ChatCard from "../components/ChatCard";
@@ -32,17 +38,7 @@ const HomeScreen = ({navigation}) => {
 
   //Here is the function that creates a line to appear between the areas to repeat in the flatlist.
   const ItemDivider = () => {
-    return (
-      <View
-        style={{
-          width: Dimensions.get("screen").width - 94,
-          height: 0.7,
-          backgroundColor: "#ddd",
-          alignSelf: "flex-end",
-          marginRight: 15,
-        }}
-      />
-    );
+    return <View style={styles.divider} />;
   };
 
   //Here, the tabBar component and flatlist that will appear on the screen are created.
@@ -64,5 +60,16 @@ const HomeScreen = ({navigation}) => {
     </SafeAreaView>
   );
 };
+
+//Here the styles of the divider are created.
+const styles = StyleSheet.create({
+  divider: {
+    width: Dimensions.get("screen").width - 94,
+    height: 0.7,
+    backgroundColor: "#ddd",
+    alignSelf: "flex-end",
+    marginRight: 15,
+  },
+});
 
 export default HomeScreen;

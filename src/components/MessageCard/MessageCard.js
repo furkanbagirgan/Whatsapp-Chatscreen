@@ -11,16 +11,26 @@ const MessageCard = ({message}) => {
 
   //Here, messages are created by checking the status of the sender via the incoming message prop.
   return (
-    <View style={message.sender==="itself" ? styles.sendContainer : styles.receiveContainer}>
-      <View style={message.sender==="itself" ? styles.rightCorner : styles.leftCorner}></View>
+    <View
+      style={
+        message.sender === "itself"
+          ? styles.sendContainer
+          : styles.receiveContainer
+      }>
+      <View
+        style={
+          message.sender === "itself" ? styles.rightCorner : styles.leftCorner
+        }></View>
       <View style={styles.messageWrapper}>
         <Text style={styles.message}>{message.text}</Text>
       </View>
       <View style={styles.timeWrapper}>
-        <Text style={styles.time}>{moment(message.datetime).format("hh:mm")}</Text>
-        {
-          message.sender==="itself" && <Icon name="check" size={15} color="black" style={{marginLeft:3}}/>
-        }
+        <Text style={styles.time}>
+          {moment(message.datetime).format("hh:mm")}
+        </Text>
+        {message.sender === "itself" && (
+          <Icon name="check" size={15} color="black" style={styles.icon} />
+        )}
       </View>
     </View>
   );

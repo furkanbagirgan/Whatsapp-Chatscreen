@@ -45,11 +45,7 @@ const App = () => {
             headerLeft: () => (
               <Image
                 source={{uri: route.params.chat.receiver.image}}
-                style={{width: 32,
-                  height: 32,
-                  borderRadius: 16,
-                  marginLeft: -20,
-                  marginRight: 5,}}
+                style={styles.image}
               />
             ),
             headerRight: () => <HeaderIcons headerType="chat" />,
@@ -59,5 +55,16 @@ const App = () => {
     </NavigationContainer>
   );
 };
+
+//Here the styles of the stack screens are created.
+const styles = StyleSheet.create({
+  image: {
+    width: 32,
+    height: 32,
+    borderRadius: 16,
+    marginLeft: -20,
+    marginRight: 5,
+  },
+});
 
 export default App;

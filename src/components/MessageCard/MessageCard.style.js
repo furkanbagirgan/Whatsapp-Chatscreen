@@ -1,7 +1,7 @@
 import {Dimensions, StyleSheet} from "react-native";
 
-////Here the basic styles of the messageCard are created.
-const basicStyles=StyleSheet.create({
+//Here the basic styles of the messageCard are created.
+const basicStyles = StyleSheet.create({
   container: {
     padding: 10,
     maxWidth: "65%",
@@ -14,38 +14,41 @@ const basicStyles=StyleSheet.create({
 
 ////Here the styles of the messageCard are created.
 const styles = StyleSheet.create({
-  sendContainer:{
+  sendContainer: {
     ...basicStyles.container,
-    backgroundColor:"#e0f6ca",
+    backgroundColor: "#e0f6ca",
     alignSelf: "flex-end",
-    marginRight: 15
+    marginRight: 15,
   },
-  receiveContainer:{
+  receiveContainer: {
     ...basicStyles.container,
-    backgroundColor:"white",
+    backgroundColor: "white",
     alignSelf: "flex-start",
-    marginLeft: 15
+    marginLeft: 15,
   },
-  messageWrapper:{
-    flexDirection:"row",
-    flexShrink: 1
+  messageWrapper: {
+    flexDirection: "row",
+    flexShrink: 1,
   },
-  message:{
+  message: {
     color: "black",
   },
-  timeWrapper:{
-    alignSelf:"flex-end",
+  timeWrapper: {
+    alignSelf: "flex-end",
     marginTop: 10,
     marginLeft: 8,
     flexDirection: "row",
-    alignItems: "center"
+    alignItems: "center",
   },
-  time:{
+  time: {
     fontSize: 11,
     color: "black",
   },
-  rightCorner:{
-    position:"absolute",
+  icon: {
+    marginLeft: 3,
+  },
+  rightCorner: {
+    position: "absolute",
     top: 0,
     right: -8,
     width: 0,
@@ -59,11 +62,11 @@ const styles = StyleSheet.create({
     borderTopColor: "transparent",
     borderLeftColor: "#e0f6ca",
   },
-  leftCorner:{
-    position:"absolute",
+  leftCorner: {
+    position: "absolute",
     top: 0,
     left: -8,
-    backgroundColor:"white",
+    backgroundColor: "white",
     width: 0,
     height: 0,
     borderTopWidth: 0,
@@ -73,8 +76,8 @@ const styles = StyleSheet.create({
     backgroundColor: "transparent",
     borderBottomColor: "transparent",
     borderTopColor: "transparent",
-    borderRightColor: "white"
-  }
+    borderRightColor: "white",
+  },
 });
 
 export default styles;
