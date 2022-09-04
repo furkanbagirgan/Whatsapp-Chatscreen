@@ -1,5 +1,5 @@
 # Assignment-2
-In this assignment, the home screen and chat screen of the Whatsapp application was created using mock data.
+In this application, the home screen and chat screen of the Whatsapp was created using mock data.
 
 ## Used technologies
 - React Native CLI
@@ -15,7 +15,7 @@ In this assignment, the home screen and chat screen of the Whatsapp application 
 ## Installation
 1.Clone Project
 ```
-git clone https://github.com/patika-218-akbank-reactnative-bootcamp/assignment-2-furkanbagirgan.git
+git clone https://github.com/furkanbagirgan/Whatsapp-Chatscreen-App.git
 ```
 2.Install the Necessary Packages for Project
 ```
