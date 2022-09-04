@@ -1,4 +1,4 @@
-# Assignment-2
+# Whatsapp Chat Screen
 In this application, the home screen and chat screen of the Whatsapp was created using mock data.
 
 ## Used technologies
